@@ -1,5 +1,7 @@
-# Aspire AI Chat
 
+A fork of the Aspire AI Chat app with a bunch of my own experimentations using different AI orchestrators, tools, etc... Most of this will never get merged back.
+
+# Aspire AI Chat
 Aspire AI Chat is a full-stack chat sample that combines modern technologies to deliver a ChatGPT-like experience.
 
 ## High-Level Overview
