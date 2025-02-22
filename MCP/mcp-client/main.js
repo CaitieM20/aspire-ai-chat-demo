@@ -1,9 +1,12 @@
-// filepath: /c:/Users/camccaff/src/AspireAgent/aspire-ai-chat-demo/MCP/mcp-client/main.js
-import { createClient } from './client.js';
+import {WeatherMCPClient} from './client.js';
 
 async function main() {
-  const client = await createClient();
+    const weatherClient = new WeatherMCPClient();
+    await weatherClient.connectToClient();
 
+    var weatherTools = await weatherClient.getTools();
+    console.log("Tools \n")
+    console.log(JSON.stringify(weatherTools, null, 2));
 }
 
 // Call the main function
